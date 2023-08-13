@@ -7,15 +7,9 @@ const NewsList = () => {
   const [news, setNews] = useState([]);
   useEffect(() => {
     const apiKey = '2137eb4d5d834a51a79c702022a856d3'; // Replace with your actual API key
-    //const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}&category=entertainment`;
-    const apiUrl = `http://newsapi.org/v2/top-headlines?country=in&category=entertainment`;
+    const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}&category=entertainment`;
   
-    axios.get(apiUrl,{
-      headers: {
-
-        'X-Api-Key': apiKey
-      }
-    })
+    axios.get(apiUrl)
       .then(response => {
         setNews(response.data.articles);
       })
