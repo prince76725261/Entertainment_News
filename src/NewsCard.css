@@ -1,0 +1,35 @@
+/* src/components/NewsCard.css */
+.news-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .news-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .news-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .news-card p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  .news-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+  }
+  
