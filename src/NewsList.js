@@ -13,7 +13,8 @@ const NewsList = () => {
     axios.get(apiUrl, {
       headers:{
         'X-Api-Key': apiKey
-      }
+      },
+      mode: 'no-cors'
     })
       .then(response => {
         setNews(response.data.articles);
