@@ -14,7 +14,6 @@ const NewsList = () => {
       headers:{
         'X-Api-Key': apiKey
       },
-      mode: 'no-cors'
     })
       .then(response => {
         setNews(response.data.articles);
